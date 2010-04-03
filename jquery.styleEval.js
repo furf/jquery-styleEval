@@ -20,6 +20,6 @@ jQuery.styleEval = function (data) {
       style.textContent = data;
     }
 
-    head.insertBefore(style, head.firstChild);
+    head.insertBefore(style, head.lastChild);
   }
 };

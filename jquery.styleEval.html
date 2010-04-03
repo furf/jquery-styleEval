@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="utf-8"/><title>jQuery.styleEval</title></head>
+  <body>
+    
+    <h1>Hello, world.</h1>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="jquery.styleEval.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+    
+      setTimeout(function () {
+        jQuery.styleEval('h1{color:red;}'); // Voila! "Hello, world." is red.        
+      }, 1000);
+      
+      setTimeout(function () {
+        jQuery.styleEval('h1{color:green;}'); // Voila! "Hello, world." is green.        
+      }, 2000);
+
+      setTimeout(function () {
+        jQuery.styleEval('h1{color:blue;}'); // Voila! "Hello, world." is blue.        
+      }, 3000);
+      
+    </script>
+  </body>
+</html>
